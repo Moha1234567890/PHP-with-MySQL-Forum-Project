@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 25, 2023 at 10:45 AM
+-- Generation Time: Apr 25, 2023 at 03:23 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -52,7 +52,7 @@ INSERT INTO `admins` (`id`, `email`, `adminname`, `password`, `created_at`) VALU
 CREATE TABLE `categories` (
   `id` int(5) NOT NULL,
   `name` varchar(200) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `created_at` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -60,11 +60,8 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `created_at`) VALUES
-(1, 'Design', '2023-03-22 10:41:36'),
-(2, 'Development', '2023-03-22 10:41:36'),
-(3, 'SEO', '2023-03-22 10:59:33'),
-(4, 'Marketing ', '2023-03-22 10:59:48'),
-(5, 'Hosting ', '2023-03-22 10:59:57');
+(1, 'nbmbnm', '2023-03-26'),
+(2, 'nmbnm', '2023-03-26');
 
 -- --------------------------------------------------------
 
@@ -189,7 +186,7 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `replies`
